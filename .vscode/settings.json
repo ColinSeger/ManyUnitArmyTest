@@ -56,5 +56,8 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "ManyUnitArmyTest.sln"
+    "dotnet.defaultSolution": "ManyUnitArmyTest.sln",
+    "cSpell.words": [
+        "Behaviour"
+    ]
 }
