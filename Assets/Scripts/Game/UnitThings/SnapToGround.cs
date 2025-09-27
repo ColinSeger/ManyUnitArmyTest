@@ -32,10 +32,7 @@ public class SnapToGround : MonoBehaviour
         RaycastHit hit;
         Transform trsform = this.transform;
         Vector3 pos = trsform.position + Vector3.up;
-        //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * distance, Color.white); 
         if(Physics.Raycast(pos, trsform.TransformDirection(Vector3.down), out hit, distance, layerMask)){
-            //Debug.Log(hit.point);
-            //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * distance, Color.white); 
             transform.position = new Vector3(pos.x, hit.point.y, pos.z);
         }
     }
